@@ -7,7 +7,6 @@ import {
   StyledProject,
   StyledProjects,
 } from './styles'
-import BGIMAGE from '../../assets/bg-about-me.png'
 import AVSLOGO from '../../assets/avs-icon.svg'
 import dtmoneyPreview from '../../assets/dt-money-preview.gif'
 
@@ -21,11 +20,17 @@ const projectsData = [
   { name: 'project 3' },
 ]
 
-const Project = ({ link, name, image }) => {
+interface iProject {
+  image?: string
+  link?: string
+  name?: string
+}
+
+const Project = ({ link, name, image }: iProject) => {
   return (
     <StyledProject>
       <ProjectLink href={link ? link : '#'} target="_blank">
-        <StyledPreview src={image ? image : null}></StyledPreview>
+        <StyledPreview src={image ? image : undefined}></StyledPreview>
       </ProjectLink>
       <p>{name ? name : 'project'}</p>
     </StyledProject>
