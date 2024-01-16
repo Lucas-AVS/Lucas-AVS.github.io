@@ -9,7 +9,7 @@ export default function Header() {
         <NavLink to="/">about</NavLink>
         <NavLink to="/">skills</NavLink>
         <NavLink to="/">projects</NavLink>
-        <NavLink to="/">about</NavLink>
+        <NavLink to="/">contact</NavLink>
       </StyledNav>
     </StyledHeader>
   )

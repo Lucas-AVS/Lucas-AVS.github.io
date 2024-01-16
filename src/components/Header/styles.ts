@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
-  height: 5.4rem;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  height: 9vh;
   background-color: ${props => props.theme['black']};
 
   display: flex;
