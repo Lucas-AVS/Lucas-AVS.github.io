@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const StyledContainer = styled.div`
   position: relative;
   text-align: center;
-  color: white;
+  color: ${props => props.theme['black']};
 `
 
 export const StyledBackgroundImage = styled.img`
-  max-height: 800px;
+  max-height: 740px;
   width: 100%;
   object-fit: cover;
 `
@@ -39,7 +39,8 @@ export const StyledTopics = styled.div`
 `
 
 export const StyledTopic = styled.div`
-  white-space: nowrap;
+  ${props => props.theme['black']};
+  -space: nowrap;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
